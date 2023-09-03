@@ -24,25 +24,25 @@
 
     기본 이동은 Chaos Vehicle Movement를 사용함
 
-![Alt text](image.png)
+![Alt text](Image/image.png)
 
-![Alt text](image-1.png)
+![Alt text](Image/image-1.png)
 
-![Alt text](image-2.png)
+![Alt text](Image/image-2.png)
 
-![Alt text](image-3.png)
+![Alt text](Image/image-3.png)
 
-![Alt text](image-4.png)
+![Alt text](Image/image-4.png)
 
-![Alt text](image-5.png)
+![Alt text](Image/image-5.png)
 
 ### 스릴 및 만족도 구현
  - 플레이어가 AI 차를 가까이 지나갈 때 $(|\triangle속도|)/(둘 사이의 거리)$가 일정 이상이 될 때 스릴 효과가 발생
  - 스릴 효과가 발생하면 만족도가 300만큼 차고 부스터를 사용중에 SP가 10 증가하고 그렇지 않을 때 SP가 20 증가함
 
-![Alt text](image-6.png)
+![Alt text](Image/image-6.png)
 
-![Alt text](image-7.png)
+![Alt text](Image/image-7.png)
 
 
 ### 네비게이션 구현
@@ -50,11 +50,11 @@
  - 랜덤으로 도착지를 설정한 후에 현재 위치에서부터 도착지까지의 최단 경로를 BFS와 백트래킹으로 찾고 경로중 가장 가까운 spline을 따라가도록 화살표의 방향을 정함
  - 플레이어가 목적지에 다다르면 목적지 위치를 찍어주고 위의 내용을 반복함
 
-![Alt text](image-8.png)
+![Alt text](Image/image-8.png)
 
-![Alt text](image-9.png)
+![Alt text](Image/image-9.png)
 
-![Alt text](image-10.png)
+![Alt text](Image/image-10.png)
 
 ## AI 
 ### 경로 찾기
@@ -67,22 +67,22 @@
 
         모든 이동은 Chaos Vehicle Movement을 기반으로 함
 
-![Alt text](image-11.png)
+![Alt text](Image/image-11.png)
 
-![Alt text](image-12.png)
+![Alt text](Image/image-12.png)
 
-![Alt text](image-13.png)
+![Alt text](Image/image-13.png)
 
-![Alt text](image-14.png)
+![Alt text](Image/image-14.png)
 
-![Alt text](image-15.png)
+![Alt text](Image/image-15.png)
 
 ### 충돌 방지
  - AI차 앞에 Collision Box를 설정해 Collision Box에 물체가 감지되면 브레이크를 밟음
  - 만약 CollisionBox끼리 충돌했다면 오른쪽에 있는 차가 먼저 지나감 (Deadlock 방지)
  - 이를 이용해 신호등을 적신호일 때 해당 도로에 Collision Box를 설치하는 것으로 구현함
 
-![Alt text](image-16.png)
+![Alt text](Image/image-16.png)
  
 ## 개선사항
 블루프린트 특성상 Tick Event에 상당한 부하가 걸리는데 AI와 네비게이션 기능이 상당한 딜레이를 잡아먹어서 이를 C++로 구현하여 개선해야함.
