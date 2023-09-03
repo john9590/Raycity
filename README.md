@@ -7,7 +7,10 @@
 
 
 # 시연 영상
- TODO
+## 플레이 영상
+ [![Video Label](http://img.youtube.com/vi/AiLIa2tmzWI/0.jpg)](https://youtu.be/AiLIa2tmzWI)
+## AI 시연 영상
+[![Video Label](http://img.youtube.com/vi/InZnIMFnpLc/0.jpg)](https://youtu.be/InZnIMFnpLc)
 
 # 개발 범위
 ## 플레이어블 캐릭터
